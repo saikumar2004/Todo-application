@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ui{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:5px 5px;
+  width:80%;
+  height:80%;
+}
+.field{
+  padding:5px ;
+  display: flex;
+  flex-direction: column;
+}
+input,textarea{
+  padding:10px;
+  border: none;
+  border-radius: 3px;
+  background-color:gainsboro;
+  color:black;
+  text-indent: 7px;
+  width:60%;
+  
+}
+label{
+  font-size: 20px;
+}
+button{
+  padding:10px;
+  width:100px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right,white,green,white);
+  color:white;
+  border: none;
+  margin-left:10px;
+}
+.card{
+  border:1px solid black;
+  padding:20px 10px;
+  width:280px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  padding:2px 3px;
+}
+.header{
+  padding:3px 0px;
+  font-weight: bold;
+}
+.buttons{
+  padding:10px 5px;
+  display: flex;
+  
+}
+.ui-basic{
+  
+  padding:8px;
+  width:140px;
+}
+.todocard{
+  display: grid;
+  gap:10px;
+  grid-template-columns: repeat(4,1fr);
+
+}
+.green{
+  border:2px solid green;
+  color:green;
+}
+.red{
+  border: 2px solid red;
+  color: red;
+}
+.done{
+  background:#ddede5;
+}
+@media(max-width:1080px){
+  
+  .todocard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+@media(max-width:780px){
+  
+  .todocard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width:580px){
+ 
+  .todocard{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
+
+
